@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy: #003B73;
+  --color-navy-dark: #002752;
+  --color-navy-light: #0056A8;
+  --color-teal: #0096C7;
+  --color-teal-light: #90E0EF;
+  --color-orange: #E8920A;
+  --color-orange-hover: #C97A08;
+  --color-off-white: #F4F8FC;
+  --color-light-blue: #EAF3FB;
+  --color-text-dark: #0D1B2A;
+  --color-text-mid: #344054;
+  --color-text-light: #667085;
+  --color-brand-border: #D0E4F5;
+  --color-success: #12B76A;
+
+  --font-sans: 'Inter', sans-serif;
+  --font-display: 'Space Grotesk', sans-serif;
+
+  --shadow-brand-sm: 0 1px 3px rgba(0,59,115,0.08), 0 1px 2px rgba(0,59,115,0.06);
+  --shadow-brand-md: 0 4px 16px rgba(0,59,115,0.12), 0 2px 8px rgba(0,59,115,0.08);
+  --shadow-brand-lg: 0 20px 60px rgba(0,59,115,0.18), 0 8px 24px rgba(0,59,115,0.1);
+  --shadow-orange: 0 4px 14px rgba(232,146,10,0.35);
+  --shadow-orange-hover: 0 6px 20px rgba(232,146,10,0.45);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: var(--font-sans);
+    color: var(--color-text-dark);
+    background: #ffffff;
+    line-height: 1.6;
+  }
+  h1, h2, h3, h4, h5 {
+    font-family: var(--font-display);
+    line-height: 1.2;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+@keyframes modalIn {
+  from { opacity: 0; transform: translateY(24px) scale(.97); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.hero-pattern::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23FFFFFF' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.policy-content h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-navy);
+  margin: 32px 0 12px;
+}
+.policy-content h3:first-child { margin-top: 0; }
+.policy-content p {
+  font-size: 15px;
+  color: var(--color-text-mid);
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+.policy-content ul {
+  padding-left: 20px;
+  margin-bottom: 16px;
+}
+.policy-content ul li {
+  font-size: 15px;
+  color: var(--color-text-mid);
+  line-height: 1.8;
+  margin-bottom: 8px;
+}
+.policy-content .policy-code {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--color-light-blue);
+  border: 1px solid var(--color-brand-border);
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--color-navy);
+  margin-bottom: 28px;
+}
