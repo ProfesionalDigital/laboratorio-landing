@@ -114,7 +114,7 @@ export function Contact() {
             onClick={openPqrsModal}
             className="bg-orange text-white px-[26px] py-[14px] rounded-lg border-0 text-sm font-bold cursor-pointer whitespace-nowrap transition-all shrink-0 shadow-[0_4px_14px_rgba(232,146,10,0.4)] hover:bg-orange-hover hover:-translate-y-0.5"
           >
-            Radicar PQRS →
+            Radicar PQRSF →
           </button>
         </div>
       </div>

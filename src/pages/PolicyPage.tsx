@@ -52,7 +52,7 @@ export function PolicyPage() {
         <div className="max-w-[1180px] mx-auto px-6">
           <div className="border-t border-white/10 pt-6 flex items-center justify-between flex-wrap gap-3">
             <div className="text-[13px] text-white/40">
-              © 2025 <span className="text-white/60">Impormedical Equipos y Suministros Médicos S.A.</span> · NIT 900261089-9
+              © 2026 <span className="text-white/60">Impormedical Equipos y Suministros Médicos S.A.</span> · NIT 900261089-9
             </div>
             <div>
               <a

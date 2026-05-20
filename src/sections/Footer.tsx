@@ -55,7 +55,7 @@ export function Footer() {
                   onClick={openPqrsModal}
                   className="text-sm text-teal-light font-bold transition-colors cursor-pointer"
                 >
-                  📋 Radicar PQRS
+                  📋 Radicar PQRSF
                 </a>
               </li>
             </ul>
@@ -79,7 +79,7 @@ export function Footer() {
         <div className="border-t border-white/10 pt-6 flex items-center justify-between flex-wrap gap-3">
           <div>
             <div className="text-[13px] text-white/40">
-              © 2025 <span className="text-white/60">Impormedical Equipos y Suministros Médicos S.A.</span> — Todos los derechos reservados.
+              © 2026 <span className="text-white/60">Impormedical Equipos y Suministros Médicos S.A.</span> — Todos los derechos reservados.
             </div>
             <div className="text-xs text-white/35 mt-1">
               Carrera 32 No. 15-76, Palmira, Valle del Cauca · servicioalcliente@impormedical.com.co
