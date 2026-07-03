@@ -26,7 +26,7 @@ export const policies: Record<PolicyKey, Policy> = {
       <ul>
         <li>La información del cliente únicamente es accedida por personal autorizado con usuario y contraseña individual.</li>
         <li>No se divulga información a terceros sin consentimiento expreso del cliente, salvo requerimiento legal.</li>
-        <li>Los sistemas de información (Salesforce, Drive, Slack) están protegidos con controles de acceso por perfiles.</li>
+        <li>Los sistemas de información están protegidos con controles de acceso por perfiles.</li>
         <li>La confidencialidad se mantiene durante 5 años después de terminada la relación contractual.</li>
       </ul>
       <h3>Independencia del personal</h3>
@@ -54,12 +54,12 @@ export const policies: Record<PolicyKey, Policy> = {
         <li><strong>Competencia técnica:</strong> Solo personal competente, evaluado y autorizado formalmente por la Dirección del Laboratorio realiza actividades de calibración.</li>
         <li><strong>Métodos normalizados:</strong> Aplicamos únicamente métodos publicados por entidades referentes en metrología (OIML, CEM, DKD, JCGM).</li>
         <li><strong>Trazabilidad metrológica:</strong> Todos los resultados son trazables al Sistema Internacional de Unidades (SI) a través de cadenas ininterrumpidas de calibración.</li>
-        <li><strong>Mejora continua:</strong> El sistema de gestión se revisa y mejora periódicamente mediante auditorías internas, revisiones por la Dirección y análisis de indicadores.</li>
+        <li><strong>Mejora continua:</strong> El software de gestión se revisa y mejora periódicamente mediante auditorías internas, revisiones por la Dirección y análisis de indicadores.</li>
         <li><strong>Satisfacción del cliente:</strong> Respondemos quejas y retroalimentación dentro de los tiempos comprometidos, buscando siempre superar las expectativas.</li>
       </ul>
       <h3>Sistema de gestión</h3>
       <p>El Laboratorio opera bajo los requisitos de la norma ISO/IEC 17025:2017 (opción A - sistema de gestión completo), con un sistema de gestión orientado a demostrar competencia, imparcialidad y operación coherente.</p>
-      <p>Los documentos del sistema de gestión están disponibles en la plataforma Daruma y los registros en Salesforce, garantizando acceso controlado y trazabilidad completa.</p>
+      <p>Los documentos del sistema de gestión están disponibles en nuestra plataforma de gestión documental y los registros en nuestra base de datos, garantizando acceso controlado y trazabilidad completa.</p>
     `,
   },
   postventa: {
@@ -97,7 +97,7 @@ export const policies: Record<PolicyKey, Policy> = {
             <p>Recibimos su petición, queja, reclamo o felicitación a través del formulario en línea, correo electrónico o WhatsApp.</p>
             <div class="flow-meta">
               <span class="flow-chip"><b>Responsable:</b> Experiencia de Producto – Servicio al Cliente</span>
-              <span class="flow-chip"><b>Registro:</b> Caso en Salesforce</span>
+              <span class="flow-chip"><b>Registro:</b> Caso en el CRM</span>
             </div>
           </div>
         </div>
@@ -106,10 +106,10 @@ export const policies: Record<PolicyKey, Policy> = {
           <div class="flow-num">2</div>
           <div class="flow-card">
             <div class="flow-title">Registro de la queja</div>
-            <p>Creamos el caso en Salesforce con un consecutivo único y adjuntamos las evidencias e información del cliente.</p>
+            <p>Creamos el caso con un consecutivo único y adjuntamos las evidencias e información del cliente.</p>
             <div class="flow-meta">
               <span class="flow-chip"><b>Responsable:</b> Experiencia de Producto – Servicio al Cliente</span>
-              <span class="flow-chip"><b>Registro:</b> Caso en Salesforce</span>
+              <span class="flow-chip"><b>Registro:</b> Caso en el CRM</span>
             </div>
           </div>
         </div>
@@ -122,7 +122,7 @@ export const policies: Record<PolicyKey, Policy> = {
             <div class="flow-meta">
               <span class="flow-chip"><b>Responsable:</b> Experiencia de Producto – Servicio al Cliente</span>
               <span class="flow-chip"><b>Frecuencia:</b> Al asignar estado al caso</span>
-              <span class="flow-chip"><b>Registro:</b> Caso en Salesforce</span>
+              <span class="flow-chip"><b>Registro:</b> Caso en el software</span>
             </div>
           </div>
         </div>
@@ -134,7 +134,7 @@ export const policies: Record<PolicyKey, Policy> = {
             <p>Revisamos si la queja corresponde a actividades bajo el alcance del laboratorio, mediante la asignación de una tarea automática.</p>
             <div class="flow-meta">
               <span class="flow-chip"><b>Responsable:</b> Dirección Técnica del Laboratorio</span>
-              <span class="flow-chip"><b>Registro:</b> Caso / Tarea en Salesforce</span>
+              <span class="flow-chip"><b>Registro:</b> Caso / Tarea en el software</span>
             </div>
           </div>
         </div>
@@ -147,7 +147,7 @@ export const policies: Record<PolicyKey, Policy> = {
             <div class="flow-branches">
               <div class="flow-branch flow-branch-no">
                 <div class="flow-branch-label">✕ No aplica</div>
-                <p>Le informamos formalmente el cierre por no procedencia, por correo electrónico y en el caso de Salesforce. El proceso finaliza aquí.</p>
+                <p>Le informamos formalmente el cierre por no procedencia, por correo electrónico y en el caso. El proceso finaliza aquí.</p>
               </div>
               <div class="flow-branch flow-branch-yes">
                 <div class="flow-branch-label">✓ Sí, es procedente</div>
@@ -164,7 +164,7 @@ export const policies: Record<PolicyKey, Policy> = {
             <p>Analizamos registros, documentos técnicos y evidencias relacionadas con el caso.</p>
             <div class="flow-meta">
               <span class="flow-chip"><b>Responsable:</b> Dirección Técnica del Laboratorio</span>
-              <span class="flow-chip"><b>Registro:</b> Informe LAB-FR-005 / Caso Salesforce</span>
+              <span class="flow-chip"><b>Registro:</b> Informe LAB-FR-005 / Caso</span>
             </div>
           </div>
         </div>
@@ -177,7 +177,7 @@ export const policies: Record<PolicyKey, Policy> = {
             <div class="flow-meta">
               <span class="flow-chip"><b>Responsable:</b> Dirección Técnica del Laboratorio</span>
               <span class="flow-chip"><b>Frecuencia:</b> Según el resultado de la investigación</span>
-              <span class="flow-chip"><b>Registro:</b> Caso Salesforce / LAB-FR-005</span>
+              <span class="flow-chip"><b>Registro:</b> Caso / LAB-FR-005</span>
             </div>
           </div>
         </div>
@@ -189,7 +189,7 @@ export const policies: Record<PolicyKey, Policy> = {
             <p>Elaboramos y entregamos el oficio con la solución para el cliente.</p>
             <div class="flow-meta">
               <span class="flow-chip"><b>Responsable:</b> Dirección del Laboratorio</span>
-              <span class="flow-chip"><b>Registro:</b> Caso Salesforce / Slack</span>
+              <span class="flow-chip"><b>Registro:</b> Caso / Software de comunicación corporativo</span>
             </div>
           </div>
         </div>
@@ -202,7 +202,7 @@ export const policies: Record<PolicyKey, Policy> = {
             <div class="flow-meta">
               <span class="flow-chip"><b>Responsable:</b> Experiencia de Producto – Servicio al Cliente</span>
               <span class="flow-chip"><b>Frecuencia:</b> Durante el tratamiento</span>
-              <span class="flow-chip"><b>Registro:</b> Correo / Caso Salesforce / Slack</span>
+              <span class="flow-chip"><b>Registro:</b> Correo / Caso / Software de comunicación corporativo</span>
             </div>
           </div>
         </div>
@@ -254,7 +254,7 @@ export const policies: Record<PolicyKey, Policy> = {
       <h3>Personal autorizado</h3>
       <ul>
         <li>El personal propio del laboratorio accede mediante claves de seguridad individuales.</li>
-        <li>Visitantes y personal externo deben tener autorización previa y registrarse en el objeto "Ingreso y salida de personal" de Salesforce mediante código QR.</li>
+        <li>Visitantes y personal externo deben tener autorización previa y registrarse en el objeto "Ingreso y salida de personal" mediante código QR.</li>
         <li>Todo visitante debe estar acompañado por personal autorizado (Gerencia General, Gerencias de Dirección o Gestión Administrativa).</li>
         <li>Se exceptúan del acompañamiento el personal de aseo y logística, bajo condiciones definidas.</li>
       </ul>
@@ -297,7 +297,7 @@ export const policies: Record<PolicyKey, Policy> = {
       <div class="policy-code">📄 SST-PL-001 / SST-PL-002 / SST-PL-003 · Impormedical</div>
       <h3>Compromiso con la seguridad laboral</h3>
       <p>Impormedical Equipos y Suministros Médicos S.A. se compromete a proporcionar un ambiente de trabajo seguro y saludable para todo el personal del Laboratorio de Metrología, previniendo lesiones, enfermedades laborales y condiciones inseguras.</p>
-      <h3>Principios del Sistema de Gestión SST</h3>
+      <h3>Principios del CRM de Gestión SST</h3>
       <ul>
         <li>Identificación, evaluación y control de peligros y riesgos laborales (SST-PR-008).</li>
         <li>Cumplimiento de la normatividad colombiana en Seguridad y Salud en el Trabajo.</li>

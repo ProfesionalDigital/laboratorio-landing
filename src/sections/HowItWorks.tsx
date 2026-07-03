@@ -12,7 +12,7 @@ const steps = [
   {
     num: 3,
     title: 'Ejecución y registro',
-    description: 'Personal autorizado ejecuta la calibración y registra todos los datos crudos en Salesforce.',
+    description: 'Personal autorizado ejecuta la calibración y registra todos los datos crudos en el software.',
   },
   {
     num: 4,
