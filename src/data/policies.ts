@@ -188,7 +188,7 @@ export const policies: Record<PolicyKey, Policy> = {
             <div class="flow-title">Definición de acciones</div>
             <p>Elaboramos y entregamos el oficio con la solución para el cliente.</p>
             <div class="flow-meta">
-              <span class="flow-chip"><b>Responsable:</b> Dirección del Laboratorio</span>
+              <span class="flow-chip"><b>Responsable:</b> Dirección del Laboratorio / Dirección técnica</span>
               <span class="flow-chip"><b>Registro:</b> Sistema interno de gestión</span>
             </div>
           </div>
@@ -241,7 +241,7 @@ export const policies: Record<PolicyKey, Policy> = {
       <h3>Imparcialidad en el análisis</h3>
       <p>La persona que trata la queja es siempre independiente de quien prestó el servicio que la originó, garantizando objetividad en el análisis y en las decisiones.</p>
 
-      <p style="margin-top:32px;font-size:13px;color:var(--text-light);">Proceso alineado con la norma ISO/IEC 17025:2017 · Referencias documentales: LAB-PR-001, LAB-FR-005, LAB-FR-027.</p>
+      <p style="margin-top:32px;font-size:13px;color:var(--text-light);">Proceso alineado con la norma ISO/IEC 17025:2017 · Referencias documentales: LAB-PR-011, LAB-FR-005, LAB-FR-027.</p>
     `,
   },
   ingreso: {
