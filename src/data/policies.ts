@@ -63,18 +63,21 @@ export const policies: Record<PolicyKey, Policy> = {
     `,
   },
   postventa: {
-    title: 'Política de Postventa y Gestión de PQR',
+    title: 'Política de Postventa y Gestión de PQRSF',
     code: 'GT-PL-003 · LAB-PR-011',
     content: `
       <div class="policy-code">📄 GT-PL-003 / LAB-PR-011 · Laboratorio de Metrología Impormedical</div>
+      <p>En el Laboratorio de Metrología de Impormedical su voz es parte de nuestra mejora continua. Toda petición, queja, reclamo, sugerencia o felicitación (PQRSF) sigue un proceso claro, trazable e imparcial. A continuación le explicamos, paso a paso, cómo la gestionamos desde que la recibimos hasta que cerramos el caso.</p>
+
       <h3>Canales de atención</h3>
-      <p>El Laboratorio de Metrología de Impormedical dispone de múltiples canales para recibir peticiones, quejas, reclamos y felicitaciones (PQRF):</p>
+      <p>Puede radicar su PQRSF a través de cualquiera de estos canales:</p>
       <ul>
+        <li><strong>Formulario en línea:</strong> impormedical.my.site.com/solicitudserviciocalibracion</li>
         <li><strong>Correo electrónico:</strong> servicioalcliente@impormedical.com.co</li>
         <li><strong>WhatsApp:</strong> +57 310 493 6998</li>
         <li><strong>Presencial:</strong> Carrera 32 No. 15-76, Palmira, Valle del Cauca</li>
-        <li><strong>Formulario en línea:</strong> impormedical.my.site.com/solicitudserviciocalibracion</li>
       </ul>
+
       <h3>Tiempos de respuesta</h3>
       <ul>
         <li>Notificación de recepción de la queja: <strong>5 días hábiles</strong></li>
@@ -82,11 +85,163 @@ export const policies: Record<PolicyKey, Policy> = {
         <li>Respuesta cuando se requiere recalibración: <strong>15 días hábiles</strong></li>
         <li>Segunda instancia (apelaciones): <strong>10 días hábiles</strong> — dirigida directamente a la Dirección del Laboratorio</li>
       </ul>
-      <h3>Proceso de gestión de quejas</h3>
-      <p>Toda queja relacionada con servicios de calibración es registrada en el objeto "Casos" de Salesforce con número secuencial automático. El proceso incluye: recepción, validación, investigación, análisis de causa raíz, respuesta al cliente y acciones para evitar recurrencia.</p>
-      <p>La revisión de la persona que trata la queja es independiente de quien prestó el servicio que la originó, garantizando imparcialidad en el análisis.</p>
-      <h3>Satisfacción del cliente</h3>
-      <p>El laboratorio realiza seguimiento semestral a la satisfacción del cliente mediante encuestas y análisis consolidado por la Dirección Técnica junto con el equipo de Experiencia de Producto.</p>
+
+      <h3>Así gestionamos su PQRSF, paso a paso</h3>
+      <p>Cada etapa tiene un responsable definido y queda registrada, para que el proceso sea transparente y usted siempre sepa en qué punto va su caso.</p>
+
+      <div class="flow">
+        <div class="flow-step">
+          <div class="flow-num">1</div>
+          <div class="flow-card">
+            <div class="flow-title">Recepción de la PQRSF</div>
+            <p>Recibimos su petición, queja, reclamo o felicitación a través del formulario en línea, correo electrónico o WhatsApp.</p>
+            <div class="flow-meta">
+              <span class="flow-chip"><b>Responsable:</b> Experiencia de Producto – Servicio al Cliente</span>
+              <span class="flow-chip"><b>Registro:</b> Caso en Salesforce</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="flow-step">
+          <div class="flow-num">2</div>
+          <div class="flow-card">
+            <div class="flow-title">Registro de la queja</div>
+            <p>Creamos el caso en Salesforce con un consecutivo único y adjuntamos las evidencias e información del cliente.</p>
+            <div class="flow-meta">
+              <span class="flow-chip"><b>Responsable:</b> Experiencia de Producto – Servicio al Cliente</span>
+              <span class="flow-chip"><b>Registro:</b> Caso en Salesforce</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="flow-step">
+          <div class="flow-num">3</div>
+          <div class="flow-card">
+            <div class="flow-title">Confirmación de recepción</div>
+            <p>Le confirmamos por correo electrónico que recibimos su PQRSF y que ya está en gestión.</p>
+            <div class="flow-meta">
+              <span class="flow-chip"><b>Responsable:</b> Experiencia de Producto – Servicio al Cliente</span>
+              <span class="flow-chip"><b>Frecuencia:</b> Al asignar estado al caso</span>
+              <span class="flow-chip"><b>Registro:</b> Caso en Salesforce</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="flow-step">
+          <div class="flow-num">4</div>
+          <div class="flow-card">
+            <div class="flow-title">Validación de la queja</div>
+            <p>Revisamos si la queja corresponde a actividades bajo el alcance del laboratorio, mediante la asignación de una tarea automática.</p>
+            <div class="flow-meta">
+              <span class="flow-chip"><b>Responsable:</b> Dirección Técnica del Laboratorio</span>
+              <span class="flow-chip"><b>Registro:</b> Caso / Tarea en Salesforce</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="flow-step flow-decision">
+          <div class="flow-num"><span>?</span></div>
+          <div class="flow-card">
+            <div class="flow-title">¿La queja está dentro del alcance del laboratorio?</div>
+            <p>La Dirección Técnica del Laboratorio decide sobre la procedencia de la queja.</p>
+            <div class="flow-branches">
+              <div class="flow-branch flow-branch-no">
+                <div class="flow-branch-label">✕ No aplica</div>
+                <p>Le informamos formalmente el cierre por no procedencia, por correo electrónico y en el caso de Salesforce. El proceso finaliza aquí.</p>
+              </div>
+              <div class="flow-branch flow-branch-yes">
+                <div class="flow-branch-label">✓ Sí, es procedente</div>
+                <p>Continuamos con la investigación de la queja (pasos 5 a 10).</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flow-step">
+          <div class="flow-num">5</div>
+          <div class="flow-card">
+            <div class="flow-title">Investigación de la queja</div>
+            <p>Analizamos registros, documentos técnicos y evidencias relacionadas con el caso.</p>
+            <div class="flow-meta">
+              <span class="flow-chip"><b>Responsable:</b> Dirección Técnica del Laboratorio</span>
+              <span class="flow-chip"><b>Registro:</b> Informe LAB-FR-005 / Caso Salesforce</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="flow-step">
+          <div class="flow-num">6</div>
+          <div class="flow-card">
+            <div class="flow-title">Acciones correctivas / TNC</div>
+            <p>Según el reporte de la queja, establecemos acciones correctivas y/o de mejora para evitar que vuelva a ocurrir.</p>
+            <div class="flow-meta">
+              <span class="flow-chip"><b>Responsable:</b> Dirección Técnica del Laboratorio</span>
+              <span class="flow-chip"><b>Frecuencia:</b> Según el resultado de la investigación</span>
+              <span class="flow-chip"><b>Registro:</b> Caso Salesforce / LAB-FR-005</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="flow-step">
+          <div class="flow-num">7</div>
+          <div class="flow-card">
+            <div class="flow-title">Definición de acciones</div>
+            <p>Elaboramos y entregamos el oficio con la solución para el cliente.</p>
+            <div class="flow-meta">
+              <span class="flow-chip"><b>Responsable:</b> Dirección del Laboratorio</span>
+              <span class="flow-chip"><b>Registro:</b> Caso Salesforce / Slack</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="flow-step">
+          <div class="flow-num">8</div>
+          <div class="flow-card">
+            <div class="flow-title">Comunicación al cliente</div>
+            <p>Le informamos la solución de su caso.</p>
+            <div class="flow-meta">
+              <span class="flow-chip"><b>Responsable:</b> Experiencia de Producto – Servicio al Cliente</span>
+              <span class="flow-chip"><b>Frecuencia:</b> Durante el tratamiento</span>
+              <span class="flow-chip"><b>Registro:</b> Correo / Caso Salesforce / Slack</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="flow-step">
+          <div class="flow-num">9</div>
+          <div class="flow-card">
+            <div class="flow-title">Verificación de satisfacción</div>
+            <p>Lo contactamos para validar que quedó conforme con la solución antes de cerrar el caso.</p>
+            <div class="flow-meta">
+              <span class="flow-chip"><b>Responsable:</b> Experiencia de Producto – Servicio al Cliente</span>
+              <span class="flow-chip"><b>Frecuencia:</b> Al finalizar la gestión</span>
+              <span class="flow-chip"><b>Registro:</b> Registro de seguimiento</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="flow-step">
+          <div class="flow-num">10</div>
+          <div class="flow-card">
+            <div class="flow-title">Encuesta de satisfacción</div>
+            <p>Le enviamos una encuesta posterior al servicio o al cierre de la PQRSF, una vez el caso se ha cerrado.</p>
+            <div class="flow-meta">
+              <span class="flow-chip"><b>Responsable:</b> Experiencia de Producto – Servicio al Cliente</span>
+              <span class="flow-chip"><b>Frecuencia:</b> Después del servicio / semestral en contratos</span>
+              <span class="flow-chip"><b>Registro:</b> Encuesta LAB-FR-027</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="flow-step">
+          <div class="flow-end">🏁 Cierre del caso</div>
+        </div>
+      </div>
+
+      <h3>Imparcialidad en el análisis</h3>
+      <p>La persona que trata la queja es siempre independiente de quien prestó el servicio que la originó, garantizando objetividad en el análisis y en las decisiones.</p>
+
+      <p style="margin-top:32px;font-size:13px;color:var(--text-light);">Proceso alineado con la norma ISO/IEC 17025:2017 · Referencias documentales: LAB-FR-005, LAB-FR-027.</p>
     `,
   },
   ingreso: {

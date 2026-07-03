@@ -94,3 +94,138 @@
   color: var(--color-navy);
   margin-bottom: 28px;
 }
+
+/* --- Flujograma de gestión de PQRSF (política de postventa) --- */
+.policy-content .flow {
+  margin: 24px 0 8px;
+}
+.policy-content .flow-step {
+  position: relative;
+  display: flex;
+  gap: 18px;
+  padding-bottom: 22px;
+}
+.policy-content .flow-step::before {
+  content: '';
+  position: absolute;
+  left: 18px;
+  top: 44px;
+  bottom: -2px;
+  width: 2px;
+  background: var(--color-brand-border);
+}
+.policy-content .flow-step:last-child::before { display: none; }
+.policy-content .flow-num {
+  flex-shrink: 0;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: var(--color-navy);
+  color: #fff;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 0 0 2px var(--color-teal);
+}
+.policy-content .flow-card {
+  flex: 1;
+  min-width: 0;
+  background: var(--color-off-white);
+  border: 1px solid var(--color-brand-border);
+  border-radius: 12px;
+  padding: 15px 18px;
+}
+.policy-content .flow-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--color-navy);
+  margin: 0 0 6px;
+  line-height: 1.3;
+}
+.policy-content .flow-card p {
+  font-size: 14px;
+  margin: 0 0 12px;
+  line-height: 1.65;
+}
+.policy-content .flow-card p:last-child { margin-bottom: 0; }
+.policy-content .flow-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.policy-content .flow-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-text-mid);
+  background: #fff;
+  border: 1px solid var(--color-brand-border);
+  border-radius: 6px;
+  padding: 4px 9px;
+  line-height: 1.4;
+}
+.policy-content .flow-chip b { color: var(--color-navy); font-weight: 700; }
+
+/* Nodo de decisión */
+.policy-content .flow-decision .flow-num {
+  background: var(--color-orange);
+  border-radius: 9px;
+  box-shadow: 0 0 0 2px var(--color-orange-hover);
+  transform: rotate(45deg);
+  font-size: 18px;
+}
+.policy-content .flow-decision .flow-num span { transform: rotate(-45deg); }
+.policy-content .flow-decision .flow-card {
+  background: #FFF7EC;
+  border-color: #F3C77A;
+}
+.policy-content .flow-branches {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 12px;
+}
+.policy-content .flow-branch {
+  flex: 1;
+  min-width: 220px;
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 11px 14px;
+}
+.policy-content .flow-branch-yes { background: #EAF7F0; border-color: #A6E3C4; }
+.policy-content .flow-branch-no  { background: #FDEEEE; border-color: #F1C4C4; }
+.policy-content .flow-branch-label {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 13px;
+  margin-bottom: 3px;
+}
+.policy-content .flow-branch-yes .flow-branch-label { color: #0E9E5A; }
+.policy-content .flow-branch-no  .flow-branch-label { color: #D64545; }
+.policy-content .flow-branch p {
+  font-size: 13px;
+  color: var(--color-text-mid);
+  margin: 0;
+  line-height: 1.55;
+}
+.policy-content .flow-end {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--color-navy);
+  color: #fff;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 14px;
+  border-radius: 999px;
+  padding: 9px 20px;
+  margin-top: 4px;
+}
