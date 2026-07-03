@@ -54,7 +54,7 @@ export const policies: Record<PolicyKey, Policy> = {
         <li><strong>Competencia técnica:</strong> Solo personal competente, evaluado y autorizado formalmente por la Dirección del Laboratorio realiza actividades de calibración.</li>
         <li><strong>Métodos normalizados:</strong> Aplicamos únicamente métodos publicados por entidades referentes en metrología (OIML, CEM, DKD, JCGM).</li>
         <li><strong>Trazabilidad metrológica:</strong> Todos los resultados son trazables al Sistema Internacional de Unidades (SI) a través de cadenas ininterrumpidas de calibración.</li>
-        <li><strong>Mejora continua:</strong> El software de gestión se revisa y mejora periódicamente mediante auditorías internas, revisiones por la Dirección y análisis de indicadores.</li>
+        <li><strong>Mejora continua:</strong> El sistema de gestión se revisa y mejora periódicamente mediante auditorías internas, revisiones por la Dirección y análisis de indicadores.</li>
         <li><strong>Satisfacción del cliente:</strong> Respondemos quejas y retroalimentación dentro de los tiempos comprometidos, buscando siempre superar las expectativas.</li>
       </ul>
       <h3>Sistema de gestión</h3>
@@ -67,7 +67,7 @@ export const policies: Record<PolicyKey, Policy> = {
     code: 'GT-PL-003 · LAB-PR-011',
     content: `
       <div class="policy-code">📄 GT-PL-003 / LAB-PR-011 · Laboratorio de Metrología Impormedical</div>
-      <p>En el Laboratorio de Metrología de Impormedical su voz es parte de nuestra mejora continua. Toda petición, queja, reclamo, sugerencia o felicitación (PQRSF) sigue un proceso claro, trazable e imparcial. A continuación le explicamos, paso a paso, cómo la gestionamos desde que la recibimos hasta que cerramos el caso.</p>
+      <p>En el Laboratorio de Metrología de Impormedical su voz es parte de nuestra mejora continua. Toda petición, queja, reclamo, sugerencia o felicitación es gestionada de manera clara, confidencial, imparcial y documentada. A continuación le explicamos, paso a paso, cómo la gestionamos desde que la recibimos hasta que cerramos el caso.</p>
 
       <h3>Canales de atención</h3>
       <p>Puede radicar su PQRSF a través de cualquiera de estos canales:</p>
@@ -82,7 +82,7 @@ export const policies: Record<PolicyKey, Policy> = {
       <ul>
         <li>Notificación de recepción de la queja: <strong>5 días hábiles</strong></li>
         <li>Respuesta formal completa: <strong>8 días hábiles</strong></li>
-        <li>Respuesta cuando se requiere recalibración: <strong>15 días hábiles</strong></li>
+        <li>Cuando se requiera recalibración del equipo: <strong>15 días hábiles</strong></li>
         <li>Segunda instancia (apelaciones): <strong>10 días hábiles</strong> — dirigida directamente a la Dirección del Laboratorio</li>
       </ul>
 
@@ -97,7 +97,7 @@ export const policies: Record<PolicyKey, Policy> = {
             <p>Recibimos su petición, queja, reclamo o felicitación a través del formulario en línea, correo electrónico o WhatsApp.</p>
             <div class="flow-meta">
               <span class="flow-chip"><b>Responsable:</b> Experiencia de Producto – Servicio al Cliente</span>
-              <span class="flow-chip"><b>Registro:</b> Caso en el CRM</span>
+              <span class="flow-chip"><b>Registro:</b> Sistema interno de gestión</span>
             </div>
           </div>
         </div>
@@ -105,11 +105,11 @@ export const policies: Record<PolicyKey, Policy> = {
         <div class="flow-step">
           <div class="flow-num">2</div>
           <div class="flow-card">
-            <div class="flow-title">Registro de la queja</div>
-            <p>Creamos el caso con un consecutivo único y adjuntamos las evidencias e información del cliente.</p>
+            <div class="flow-title">Registro de la PQRSF</div>
+            <p>Se registra la PQRSF en nuestro sistema interno de gestión con un consecutivo único y adjuntamos las evidencias e información del cliente.</p>
             <div class="flow-meta">
               <span class="flow-chip"><b>Responsable:</b> Experiencia de Producto – Servicio al Cliente</span>
-              <span class="flow-chip"><b>Registro:</b> Caso en el CRM</span>
+              <span class="flow-chip"><b>Registro:</b> Sistema interno de gestión</span>
             </div>
           </div>
         </div>
@@ -118,11 +118,11 @@ export const policies: Record<PolicyKey, Policy> = {
           <div class="flow-num">3</div>
           <div class="flow-card">
             <div class="flow-title">Confirmación de recepción</div>
-            <p>Le confirmamos por correo electrónico que recibimos su PQRSF y que ya está en gestión.</p>
+            <p>Le confirmamos por correo electrónico que recibimos su solicitud, informando el número de registro asignado y que ya se encuentra en gestión.</p>
             <div class="flow-meta">
               <span class="flow-chip"><b>Responsable:</b> Experiencia de Producto – Servicio al Cliente</span>
               <span class="flow-chip"><b>Frecuencia:</b> Al asignar estado al caso</span>
-              <span class="flow-chip"><b>Registro:</b> Caso en el software</span>
+              <span class="flow-chip"><b>Registro:</b> Sistema interno de gestión</span>
             </div>
           </div>
         </div>
@@ -130,11 +130,11 @@ export const policies: Record<PolicyKey, Policy> = {
         <div class="flow-step">
           <div class="flow-num">4</div>
           <div class="flow-card">
-            <div class="flow-title">Validación de la queja</div>
-            <p>Revisamos si la queja corresponde a actividades bajo el alcance del laboratorio, mediante la asignación de una tarea automática.</p>
+            <div class="flow-title">Validación de la solicitud</div>
+            <p>Validamos si su solicitud está relacionada con los servicios del laboratorio. Si corresponde a una queja o reclamo bajo nuestro alcance, la Dirección Técnica revisa el caso y continuamos con su análisis y tratamiento.</p>
             <div class="flow-meta">
               <span class="flow-chip"><b>Responsable:</b> Dirección Técnica del Laboratorio</span>
-              <span class="flow-chip"><b>Registro:</b> Caso / Tarea en el software</span>
+              <span class="flow-chip"><b>Registro:</b> Sistema interno de gestión</span>
             </div>
           </div>
         </div>
@@ -147,7 +147,7 @@ export const policies: Record<PolicyKey, Policy> = {
             <div class="flow-branches">
               <div class="flow-branch flow-branch-no">
                 <div class="flow-branch-label">✕ No aplica</div>
-                <p>Le informamos formalmente el cierre por no procedencia, por correo electrónico y en el caso. El proceso finaliza aquí.</p>
+                <p>Le informamos formalmente el cierre por no procedencia, por correo electrónico, y se registra en el sistema interno de gestión. El proceso finaliza aquí.</p>
               </div>
               <div class="flow-branch flow-branch-yes">
                 <div class="flow-branch-label">✓ Sí, es procedente</div>
@@ -164,7 +164,7 @@ export const policies: Record<PolicyKey, Policy> = {
             <p>Analizamos registros, documentos técnicos y evidencias relacionadas con el caso.</p>
             <div class="flow-meta">
               <span class="flow-chip"><b>Responsable:</b> Dirección Técnica del Laboratorio</span>
-              <span class="flow-chip"><b>Registro:</b> Informe LAB-FR-005 / Caso</span>
+              <span class="flow-chip"><b>Registro:</b> Sistema interno de gestión</span>
             </div>
           </div>
         </div>
@@ -177,7 +177,7 @@ export const policies: Record<PolicyKey, Policy> = {
             <div class="flow-meta">
               <span class="flow-chip"><b>Responsable:</b> Dirección Técnica del Laboratorio</span>
               <span class="flow-chip"><b>Frecuencia:</b> Según el resultado de la investigación</span>
-              <span class="flow-chip"><b>Registro:</b> Caso / LAB-FR-005</span>
+              <span class="flow-chip"><b>Registro:</b> Sistema interno de gestión</span>
             </div>
           </div>
         </div>
@@ -189,7 +189,7 @@ export const policies: Record<PolicyKey, Policy> = {
             <p>Elaboramos y entregamos el oficio con la solución para el cliente.</p>
             <div class="flow-meta">
               <span class="flow-chip"><b>Responsable:</b> Dirección del Laboratorio</span>
-              <span class="flow-chip"><b>Registro:</b> Caso / Software de comunicación corporativo</span>
+              <span class="flow-chip"><b>Registro:</b> Sistema interno de gestión</span>
             </div>
           </div>
         </div>
@@ -198,11 +198,11 @@ export const policies: Record<PolicyKey, Policy> = {
           <div class="flow-num">8</div>
           <div class="flow-card">
             <div class="flow-title">Comunicación al cliente</div>
-            <p>Le informamos la solución de su caso.</p>
+            <p>Le informamos la solución de su caso a través de correo electrónico.</p>
             <div class="flow-meta">
               <span class="flow-chip"><b>Responsable:</b> Experiencia de Producto – Servicio al Cliente</span>
               <span class="flow-chip"><b>Frecuencia:</b> Durante el tratamiento</span>
-              <span class="flow-chip"><b>Registro:</b> Correo / Caso / Software de comunicación corporativo</span>
+              <span class="flow-chip"><b>Registro:</b> Correo / Sistema interno de gestión</span>
             </div>
           </div>
         </div>
@@ -241,7 +241,7 @@ export const policies: Record<PolicyKey, Policy> = {
       <h3>Imparcialidad en el análisis</h3>
       <p>La persona que trata la queja es siempre independiente de quien prestó el servicio que la originó, garantizando objetividad en el análisis y en las decisiones.</p>
 
-      <p style="margin-top:32px;font-size:13px;color:var(--text-light);">Proceso alineado con la norma ISO/IEC 17025:2017 · Referencias documentales: LAB-FR-005, LAB-FR-027.</p>
+      <p style="margin-top:32px;font-size:13px;color:var(--text-light);">Proceso alineado con la norma ISO/IEC 17025:2017 · Referencias documentales: LAB-PR-001, LAB-FR-005, LAB-FR-027.</p>
     `,
   },
   ingreso: {
@@ -297,7 +297,7 @@ export const policies: Record<PolicyKey, Policy> = {
       <div class="policy-code">📄 SST-PL-001 / SST-PL-002 / SST-PL-003 · Impormedical</div>
       <h3>Compromiso con la seguridad laboral</h3>
       <p>Impormedical Equipos y Suministros Médicos S.A. se compromete a proporcionar un ambiente de trabajo seguro y saludable para todo el personal del Laboratorio de Metrología, previniendo lesiones, enfermedades laborales y condiciones inseguras.</p>
-      <h3>Principios del CRM de Gestión SST</h3>
+      <h3>Principios del Sistema de Gestión SST</h3>
       <ul>
         <li>Identificación, evaluación y control de peligros y riesgos laborales (SST-PR-008).</li>
         <li>Cumplimiento de la normatividad colombiana en Seguridad y Salud en el Trabajo.</li>
