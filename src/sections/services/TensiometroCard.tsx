@@ -100,7 +100,7 @@ export function TensiometroCard() {
           <div className="text-[11px] font-bold text-text-light uppercase tracking-[0.8px] mt-3.5 mb-1.5">Criterios de conformidad</div>
           <div className="bg-[#FFF8E7] border border-[#FFE0A0] rounded-lg px-3.5 py-2.5 mt-2">
             <strong className="block text-xs text-[#7A4F00] font-bold mb-0.5">Aneroides (OIML R148-1)</strong>
-            <span className="block text-xs text-[#7A4F00]">Error máximo permitido: ±3 mmHg en cualquier punto</span>
+            <span className="block text-xs text-[#7A4F00]">Error máximo permitido: ±3 mmHg o ±2% de la lectura, el mayor de los dos</span>
           </div>
           <div className="bg-[#FFF8E7] border border-[#FFE0A0] rounded-lg px-3.5 py-2.5 mt-2">
             <strong className="block text-xs text-[#7A4F00] font-bold mb-0.5">Digitales (OIML R149-1)</strong>

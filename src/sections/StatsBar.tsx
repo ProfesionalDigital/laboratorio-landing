@@ -1,7 +1,7 @@
 const stats = [
   { num: '3', label: 'Magnitudes calibradas' },
   { num: 'SI', label: 'Trazabilidad internacional' },
-  { num: 'ILAC-MRA', label: 'Firmante reconocido' },
+  { num: 'ILAC-MRA', label: 'Trazabilidad metrológica' },
   { num: 'ISO 17025', label: 'Sistema de gestión' },
 ]
 
