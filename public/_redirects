@@ -1,0 +1,7 @@
+# Fallback SPA para Cloudflare Pages.
+# El ruteo es del lado del cliente (src/App.tsx), así que una visita directa o un
+# refresh sobre una ruta como /quejas-y-retroalimentacion-de-partes-interesadas
+# debe servir index.html con estado 200 en lugar de devolver 404.
+# Los archivos estáticos existentes (assets, logo-im.svg, pqrs-ok.html) tienen
+# precedencia y no pasan por esta regla.
+/*    /index.html   200

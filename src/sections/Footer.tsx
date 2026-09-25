@@ -11,7 +11,7 @@ const policyLinks: { key: PolicyKey; label: string }[] = [
 ]
 
 export function Footer() {
-  const { showPolicy, openPqrsModal } = useApp()
+  const { showPolicy, showQuejas, openPqrsModal } = useApp()
 
   return (
     <footer className="bg-navy-dark text-white/70 pt-14 pb-7">
@@ -48,6 +48,14 @@ export function Footer() {
               <li>
                 <a href="https://www.impormedical.co" target="_blank" rel="noreferrer" className="text-sm text-white/60 transition-colors cursor-pointer hover:text-teal-light">
                   Impormedical.co
+                </a>
+              </li>
+              <li>
+                <a
+                  onClick={showQuejas}
+                  className="text-sm text-white/60 transition-colors cursor-pointer hover:text-teal-light"
+                >
+                  Quejas y retroalimentación de partes interesadas
                 </a>
               </li>
               <li>
